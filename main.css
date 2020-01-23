@@ -28,26 +28,28 @@ html, body {
     text-align: center;
   }
 
-  #banner {
-      height: 30px;
-      /*border: 10px groove goldenrod;*/
-      display: flex;
+  nav {
+    height: 30px;
+    /*border: 10px groove goldenrod;*/
+    display: flex;
   }
-    #banner div {
+
+    nav a {
         background-color: burlywood;
-        color: rebeccapurple;
-        /*inset-block: top;*/
         -ms-flex: 1; /* For IE 10 */
         flex: 1; /* Weight of 1. */
+        text-align: center;
+        color: #052;
+        border: 3px groove grey;
+        text-decoration: none;
     }
-  
-  video {
-    background-color: #000000;
-    border: 2px solid black;
-  }
-  
+    nav a:hover {
+        background-color: antiquewhite;
+    }
+
   img {
-    justify-content: center;
+    justify-content: center; /*TODO:*/
+    border-radius: 10%; /* rounded edges*/
     border: 10px solid #FFEE00;
   }
   
