@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     width: 100%;
+    background-color: bisque;
   }
   
   div {
@@ -26,11 +27,15 @@ html, body {
   
   h1 {
     font-size: 48px;
-    color: blue;
+    color: black;
+    text-align: center;
   }
   
-  .nav h1 {
+  .banner-dropdown {
     padding-left: 20px;
+    background-color: burlywood;
+    color: rebeccapurple;
+    inset-block: top;
   }
   
   video {
