@@ -1,14 +1,11 @@
+/* this is how you comment in CSS*/
+
 html, body {
     font-family: sans-serif;
     height: 100%;
     margin: 0;
     width: 100%;
     background-color: bisque;
-  }
-  
-  div {
-    padding-right: 30px;
-    width: 100%;
   }
   
   .container {
@@ -30,17 +27,27 @@ html, body {
     color: black;
     text-align: center;
   }
-  
-  .banner-dropdown {
-    padding-left: 20px;
-    background-color: burlywood;
-    color: rebeccapurple;
-    inset-block: top;
+
+  #banner {
+      height: 30px;
+      /*border: 10px groove goldenrod;*/
+      display: flex;
   }
+    #banner div {
+        background-color: burlywood;
+        color: rebeccapurple;
+        /*inset-block: top;*/
+        -ms-flex: 1; /* For IE 10 */
+        flex: 1; /* Weight of 1. */
+    }
   
   video {
     background-color: #000000;
     border: 2px solid black;
   }
   
+  img {
+    justify-content: center;
+    border: 10px solid #FFEE00;
+  }
   
