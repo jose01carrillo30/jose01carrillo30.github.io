@@ -14,7 +14,7 @@ html, body {
 
   /* Top navigation bar style */
   nav {
-    height: 30px; /* TODO: better resizing*/
+    height: fit-content;
     /*border: 10px groove goldenrod;*/
     display: flex;
   }
@@ -24,11 +24,16 @@ html, body {
         flex: 1; /* Weight of 1. */
         text-align: center;
         color: #052;
+        padding: 0.5%;
         border: 3px groove grey;
         text-decoration: none;
     }
     nav a:hover {
         background-color: antiquewhite;
+    }
+    nav .current {
+      background-color: bisque;
+      text-decoration: underline overline;
     }
 
   /* Style used by divs that contain selection of images */
