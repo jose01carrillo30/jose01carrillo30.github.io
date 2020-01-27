@@ -5,12 +5,39 @@ html, body {
     width: 100%;
     background-color: bisque;
   }
-    
+
+  p {
+    padding: 10px;
+    font-size: 22px;
+  }
+
   h1 {
     font-size: 48px;
-    color: black;
     text-align: center;
   }
+  h2 {
+    font-size: 48px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /* Contains pair of elements side-by-side */
+  .lrcontainer {
+    display: flex;
+  }
+    /* item in container */
+    .lrcontainer .item {
+      flex: 1;
+    }
+    /* specifically gallery pictures*/
+    .pictures {
+      flex: 1;
+      display: flex;
+      margin: 1rem;
+    }
 
   /* Top navigation bar style */
   nav {
@@ -36,20 +63,21 @@ html, body {
       text-decoration: underline overline;
     }
 
-  /* Style used by divs that contain selection of images */
-  .gallery {
-      border: 10px solid #052;
+  /* Gallery is made of slides. Style used by divs that contain selection of images */
+  .slide {
+      border: 8px solid #052;
       background-color: rgb(251, 248, 242);
       width: 90%;
-      margin: auto;
+      margin: 30px;
   }
-    .gallery img {
+    .slide img {
         /*justify-content: center; /*TODO:*/ 
         border-radius: 10%; /* rounded edges*/
-        border: 1px solid rgb(49, 182, 178);
-        max-width: 10rem; /* set width */
-        height: auto; /* Scale to maintain aspect ratio */
-        display: block;
-        margin: auto;
+        border: 1px solid forestgreen;
+        max-width: 40rem; /* set width */
+        /*height: auto; /* Scale to maintain aspect ratio */
     }
   
+  .centerme {
+    text-align: center;
+  }
