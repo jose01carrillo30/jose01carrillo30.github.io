@@ -32,13 +32,47 @@ html, body {
     .lrcontainer .item {
       flex: 1;
     }
-    /* specifically gallery pictures*/
+    /* all images in lrcontainer are constrained by their div */
+    .lrcontainer img {
+      width: 100%;
+    }
+    /* specifically a collection of gallery pictures*/
     .pictures {
-      flex: 1;
-      display: flex;
       margin: 1rem;
     }
+      /* Gallery is made of slides. Style used by divs that contain selection of images */
+      .slide {
+          border: 8px solid #052;
+          background-color: rgb(251, 248, 242);
+          width: 90%;
+          margin: 30px;
+      }
+        .slide img {
+            border-radius: 10%; /* rounded edges*/
+            border: 1px solid forestgreen;
+        }
 
+  /* Div that holds resume embedding */
+  #resumecontainer {
+    flex: 3;
+    height: 30rem;
+  }
+  /* containers on the resume page */
+  .resumepagecontainer {
+    padding: 1rem;
+    text-align: center;
+  }
+    .resumepagecontainer img {
+      width: 50%;
+      margin: 1rem;
+    }
+  .aboutme {
+    padding: 2rem;
+  }
+  .centerme {
+    text-align: center;
+  }
+  
   /* Top navigation bar style */
   nav {
     height: fit-content;
@@ -61,35 +95,4 @@ html, body {
     nav .current {
       background-color: bisque;
       text-decoration: underline overline;
-    }
-
-  /* Gallery is made of slides. Style used by divs that contain selection of images */
-  .slide {
-      border: 8px solid #052;
-      background-color: rgb(251, 248, 242);
-      width: 90%;
-      margin: 30px;
-  }
-    .slide img {
-        /*justify-content: center; /*TODO:*/ 
-        border-radius: 10%; /* rounded edges*/
-        border: 1px solid forestgreen;
-        max-width: 40rem; /* set width */
-        /*height: auto; /* Scale to maintain aspect ratio */
-    }
-  
-  .centerme {
-    text-align: center;
-  }
-
-  #resumecontainer {
-    flex: 3;
-    height: 30rem;
-  }
-  .resumepagecontainer {
-    padding: 1rem;
-    text-align: center;
-  }
-    .resumepagecontainer img {
-      width: 50%;
     }
