@@ -6,6 +6,11 @@ html, body {
     background-color: bisque;
   }
 
+  .greentext {
+    color: forestgreen;
+  }
+
+
   p {
     padding: 10px;
     font-size: 22px;
