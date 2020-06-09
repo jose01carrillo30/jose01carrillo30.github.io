@@ -57,6 +57,9 @@ html, body {
             border: 1px solid forestgreen;
             max-height: 70vh;
         }
+        .slide img:hover {
+          opacity: 0.4;
+      }
 
   /* Div that holds resume embedding */
   #resumecontainer {
