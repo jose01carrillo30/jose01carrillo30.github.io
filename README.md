@@ -1,2 +1,2 @@
 # Personal-Website
-http://people.tamu.edu/~jcarri877/index.html
+https://ghde.dev/
