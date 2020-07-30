@@ -6,10 +6,13 @@ html, body {
     background-color: rgb(216, 209, 186);;
   }
 
-  .greentext {
+  a:link {
     color: rgb(105, 136, 20);
   }
-  .greentext:hover {
+  a:visited {
+    color: rgb(82, 107, 13);
+  }
+  a:hover {
     color: forestgreen;
   }
 
@@ -51,7 +54,7 @@ html, body {
       /* Gallery is made of slides. Style used by divs that contain selection of images */
       .slide {
           border: 8px solid #052;
-          background-color: rgb(251, 248, 242);
+          background-color: rgb(235, 234, 229);
           width: 90%;
           margin: 30px;
       }
@@ -95,7 +98,7 @@ html, body {
     display: flex;
   }
     nav a {
-        background-color: burlywood;
+        background-color: rgb(206, 192, 147);
         -ms-flex: 1; /* For IE 10 */
         flex: 1; /* Weight of 1. */
         text-align: center;
@@ -105,7 +108,7 @@ html, body {
         text-decoration: none;
     }
     nav a:hover {
-        background-color: antiquewhite;
+        background-color: rgb(233, 221, 206);
     }
     nav .current {
       background-color: rgb(216, 209, 186);;
