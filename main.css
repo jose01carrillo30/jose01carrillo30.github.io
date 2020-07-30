@@ -1,116 +1,129 @@
 html, body {
-    font-family: sans-serif;
-    height: 100%;
-    margin: 0;
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(216, 209, 186);;
+}
+
+p {
+  padding: 10px;
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+h2 {
+  font-size: 48px;
+  text-align: center;
+}
+h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+p a:link,
+h1 a:link,
+h2 a:link,
+h3 a:link {
+  color: rgb(105, 136, 20);
+}
+p a:visited,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited {
+  color: rgb(82, 107, 13);
+}
+p a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover {
+  color: forestgreen;
+}
+
+
+/* Contains pair of elements side-by-side */
+.lrcontainer {
+  display: flex;
+}
+  /* item in container */
+  .lrcontainer .item {
+    flex: 1;
+  }
+  /* all images in lrcontainer are constrained by their div */
+  .lrcontainer img {
     width: 100%;
-    background-color: rgb(216, 209, 186);;
   }
-
-  a:link {
-    color: rgb(105, 136, 20);
+  /* specifically a collection of gallery pictures*/
+  .pictures {
+    margin: 1rem;
   }
-  a:visited {
-    color: rgb(82, 107, 13);
-  }
-  a:hover {
-    color: forestgreen;
-  }
-
-
-  p {
-    padding: 10px;
-    font-size: 22px;
-  }
-
-  h1 {
-    font-size: 48px;
-    text-align: center;
-  }
-  h2 {
-    font-size: 48px;
-    text-align: center;
-  }
-  h3 {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  /* Contains pair of elements side-by-side */
-  .lrcontainer {
-    display: flex;
-  }
-    /* item in container */
-    .lrcontainer .item {
-      flex: 1;
+    /* Gallery is made of slides. Style used by divs that contain selection of images */
+    .slide {
+        border: 8px solid #052;
+        background-color: rgb(235, 234, 229);
+        width: 90%;
+        margin: 30px;
     }
-    /* all images in lrcontainer are constrained by their div */
-    .lrcontainer img {
-      width: 100%;
-    }
-    /* specifically a collection of gallery pictures*/
-    .pictures {
-      margin: 1rem;
-    }
-      /* Gallery is made of slides. Style used by divs that contain selection of images */
-      .slide {
-          border: 8px solid #052;
-          background-color: rgb(235, 234, 229);
-          width: 90%;
-          margin: 30px;
+      .slide img {
+          border-radius: 10%; /* rounded edges*/
+          border: 1px solid forestgreen;
+          max-height: 70vh;
       }
-        .slide img {
-            border-radius: 10%; /* rounded edges*/
-            border: 1px solid forestgreen;
-            max-height: 70vh;
-        }
-        .slide img:hover {
-          opacity: 0.4;
-      }
+      .slide img:hover {
+        opacity: 0.4;
+    }
 
-  /* Div that holds resume embedding */
-  #resumecontainer {
-    flex: 3;
-    height: 30rem;
+/* Div that holds resume embedding */
+#resumecontainer {
+  flex: 3;
+  height: 30rem;
+}
+/* containers on the resume page */
+.resumepagecontainer {
+  padding: 1rem;
+  text-align: center;
+}
+  .resumepagecontainer img {
+    width: 50%;
+    margin: 1rem;
   }
-  /* containers on the resume page */
-  .resumepagecontainer {
-    padding: 1rem;
-    text-align: center;
-  }
-    .resumepagecontainer img {
-      width: 50%;
-      margin: 1rem;
-    }
-  .aboutme {
-    padding: 2rem;
-  }
-  #tamulogo {
-    flex: 0.7;
-  }
-  .centerme {
-    text-align: center;
-  }
-  
-  /* Top navigation bar style */
-  nav {
-    height: fit-content;
-    /*border: 10px groove goldenrod;*/
-    display: flex;
-  }
-    nav a {
-        background-color: rgb(206, 192, 147);
-        -ms-flex: 1; /* For IE 10 */
-        flex: 1; /* Weight of 1. */
-        text-align: center;
-        color: #052;
-        padding: 0.5%;
-        border: 3px groove grey;
-        text-decoration: none;
-    }
-    nav a:hover {
-        background-color: rgb(233, 221, 206);
-    }
-    nav .current {
-      background-color: rgb(216, 209, 186);;
-      text-decoration: underline overline;
-    }
+.aboutme {
+  padding: 2rem;
+}
+#tamulogo {
+  flex: 0.7;
+}
+.centerme {
+  text-align: center;
+}
+
+/* Top navigation bar style */
+nav {
+  height: fit-content;
+  /*border: 10px groove goldenrod;*/
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #500000;
+  -ms-flex: 1; /* For IE 10 */
+  flex: 1; /* Weight of 1. */
+  text-align: center;
+  border: 3px groove grey;
+  padding: 10px;
+  font-size: 22px;
+  height: 100%;
+  margin: 0;
+}
+nav a:hover {
+    background-color: #4f581b;
+}
+nav .current,
+nav a:active {
+  background-color: #052;
+  text-decoration: underline overline;
+}
