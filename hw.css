@@ -1,0 +1,12 @@
+.bg1 {
+    background-image: url("images/tiles/SQUARE_CALM2.gif");
+    background-repeat: repeat;
+}
+.bg2 {
+    background-image: url("images/tiles/PIPES.gif");
+    background-repeat: repeat;
+}
+
+h1, h2, h3, p {
+    color: white;
+}
