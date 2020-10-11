@@ -3,11 +3,27 @@ html, body {
   height: 100%;
   margin: 0;
   width: 100%;
-
-  /* Animated background pattern */
+}
+/* Animated background is used */
+body {
   background-color: rgb(216, 209, 186);;
-  background-image: url("images/tiles/BEIGE_SQUARE_3.gif");
   background-repeat: repeat;
+}
+/* Which background for which page? */
+body.homepage {
+  background-image: url("images/tiles/BEIGE_GOLDTIME.gif");
+}
+body.aboutpage {
+  background-image: url("images/tiles/BEIGE_SQUARE_3.gif");
+}
+body.portpage {
+  background-image: url("images/tiles/BEIGE_GRADTILES.gif");
+}
+body.resumepage {
+  background-image: url("images/tiles/BEIGE_WASHER.gif");
+}
+body.servicepage {
+  background-image: url("images/tiles/BEIGE_WAVES_2.gif");
 }
 
 p {
