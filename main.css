@@ -3,7 +3,11 @@ html, body {
   height: 100%;
   margin: 0;
   width: 100%;
+
+  /* Animated background pattern */
   background-color: rgb(216, 209, 186);;
+  background-image: url("images/tiles/BEIGE_SQUARE_3.gif");
+  background-repeat: repeat;
 }
 
 p {
