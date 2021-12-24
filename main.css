@@ -10,6 +10,7 @@ body {
   background-repeat: repeat;
 }
 /* Which background for which page? */
+/* TODO: BEIGE_SQUAURE_3_CL is new and looks nice, maybe put it somewhere? */
 body.homepage {
   background-image: url("images/tiles/BEIGE_GOLDTIME.gif");
 }
