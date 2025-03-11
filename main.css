@@ -121,30 +121,57 @@ h3 a:hover {
   text-align: center;
 }
 
-/* Top navigation bar style */
-nav {
-  height: fit-content;
-  /*border: 10px groove goldenrod;*/
+/* Navigation bar */
+.nav-set {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #500000;
 }
-nav a {
+
+/* For mobile / narrow screens */
+@media all and (max-width: 600px) {
+  .nav-set {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .nav-set a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-set li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+/* Navigation buttons */
+.nav-set > li {
+  flex-grow: 1;
+}
+.nav-link {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  display: block;
+  color: white;
   background-color: #500000;
-  -ms-flex: 1; /* For IE 10 */
-  flex: 1; /* Weight of 1. */
   text-align: center;
   border: 3px groove grey;
   padding: 10px;
   font-size: 22px;
-  height: 100%;
   margin: 0;
 }
-nav a:hover {
-    background-color: #4f581b;
+.nav-link:hover {
+  background-color: #4f581b;
 }
-nav .current,
-nav a:active {
+.nav-link.current,
+.nav-link:active {
   background-color: #052;
   text-decoration: underline overline;
 }
